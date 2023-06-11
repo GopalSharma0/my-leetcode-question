@@ -1,5 +1,5 @@
 class Solution {
-    void combination(const vector<int>& candidates, int target, vector<int> &currComb, int currSum, int currIndex, vector<vector<int>>& ans){
+    void combination(vector<int>& candidates, int target, vector<int> &currComb, int currSum, int currIndex, vector<vector<int>>& ans){
         if(currSum>target) return; //backtrack
         if(currSum==target){
             ans.push_back(currComb); //store the solution and backtrack
